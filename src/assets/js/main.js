@@ -1,10 +1,10 @@
 /**
-* Template Name: Regna
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Template Name: Regna
+ * Updated: Mar 10 2023 with Bootstrap v5.2.3
+ * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
 (function() {
   "use strict";
 
@@ -35,7 +35,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -191,7 +191,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -227,8 +227,37 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
 })()
+
+
+$(document).ready(function(){
+  $('.login-info-box').fadeOut();
+  $('.login-show').addClass('show-log-panel');
+});
+
+
+$('.login-reg-panel input[type="radio"]').on('change', function() {
+  if($('#log-login-show').is(':checked')) {
+    $('.register-info-box').fadeOut();
+    $('.login-info-box').fadeIn();
+
+    $('.white-panel').addClass('right-log');
+    $('.register-show').addClass('show-log-panel');
+    $('.login-show').removeClass('show-log-panel');
+
+  }
+  else if($('#log-reg-show').is(':checked')) {
+    $('.register-info-box').fadeIn();
+    $('.login-info-box').fadeOut();
+
+    $('.white-panel').removeClass('right-log');
+
+    $('.login-show').addClass('show-log-panel');
+    $('.register-show').removeClass('show-log-panel');
+  }
+});
+

@@ -3,37 +3,56 @@
 
     <div id="logo">
       <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
-      <!-- Uncomment below if you prefer to use a text logo -->
-      <!--<h1><a href="index.html">Regna</a></h1>-->
+
     </div>
 
-<nav id="navbar" class="navbar">
-  <ul>
-    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-    <li><a class="nav-link scrollto" href="#about">About</a></li>
-    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+    <nav id="navbar" class="navbar">
       <ul>
-        <li><a href="#">Drop Down 1</a></li>
-        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-          <ul>
-            <li><a href="#">Deep Drop Down 1</a></li>
-            <li><a href="#">Deep Drop Down 2</a></li>
-            <li><a href="#">Deep Drop Down 3</a></li>
-            <li><a href="#">Deep Drop Down 4</a></li>
-            <li><a href="#">Deep Drop Down 5</a></li>
+        <li><a class="nav-link scrollto active" routerLink="" routerLinkActive="active-link"
+               [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+        <li><a class="nav-link scrollto" href="#services">Services</a></li>
+        <li><a class="nav-link scrollto " routerLink="taxe" routerLinkActive="active-link">Taxe</a></li>
+        <li><a class="nav-link scrollto" routerLink="about" routerLinkActive="active-link">About</a></li>
+        <li><a class="nav-link scrollto" routerLink="team" routerLinkActive="active-link">Team</a></li>
+        <li><a class="nav-link scrollto" routerLink="contact" routerLinkActive="active-link">Contact</a></li>
+        <div class="dropdown">
+          <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
           </ul>
-        </li>
-        <li><a href="#">Drop Down 2</a></li>
-        <li><a href="#">Drop Down 3</a></li>
-        <li><a href="#">Drop Down 4</a></li>
+        </div>
+        <!-- user -->
+        <div class="dropdown">
+          <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="login" routerLinkActive="active-link">Login</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+
+
       </ul>
-    </li>
-    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-  </ul>
-  <i class="bi bi-list mobile-nav-toggle"></i>
-</nav>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
   </div>
 </header>

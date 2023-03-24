@@ -4,20 +4,29 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
-import {MenupageComponent} from "./pages/menupage/menupage.component";
-import {PageComponent} from "./pages/page/page.component";
-import {TeamComponent} from "./pages/team/team.component";
 import {ServiceComponent} from "./pages/service/service.component";
+import {TaxeComponent} from "./pages/taxe/taxe.component";
+import {NotificationComponent} from "./pages/notification/notification.component";
+import {UserComponent} from "./pages/user/user.component";
+import {TeamComponent} from "./pages/team/team.component";
+import {LoginComponent} from "./pages/login/login.component";
+import {PaimentComponent} from "./pages/paiment/paiment.component";
+
+export let indexLink='';
+export let taxeLink='taxe';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:indexLink,component:HomeComponent},
   {path:'menu',component:MenuComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
-  {path:'menupage',component:MenupageComponent},
-  {path:'page',component:PageComponent},
+  {path:'service',component:ServiceComponent},
+  {path:taxeLink,component:TaxeComponent},
+  {path:'notification',component:NotificationComponent},
+  {path:'user',component:UserComponent},
   {path:'team',component:TeamComponent},
-  {path:'service',component:ServiceComponent}
+  {path:'login',component:LoginComponent},
+  {path:'paiment',component:PaimentComponent}
 ];
 
 @NgModule({
