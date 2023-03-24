@@ -17,6 +17,8 @@ import { TeamComponent } from './pages/team/team.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PaimentComponent } from './pages/paiment/paiment.component';
+import { TaxeTrimestrielComponent } from './pages/taxe-trimestriel/taxe-trimestriel.component';
+import { TaxeAnuelleComponent } from './pages/taxe-anuelle/taxe-anuelle.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { PaimentComponent } from './pages/paiment/paiment.component';
     LogoutComponent,
     LoginComponent,
     PaimentComponent,
+    TaxeTrimestrielComponent,
+    TaxeAnuelleComponent,
   ],
   imports: [
     BrowserModule,

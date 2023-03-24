@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   foodData:any;
   ngOnInit(): void {
     this.foodData = this.service.foodDetails;
+    console.log(history.state.exemple);
   }
 
 }
