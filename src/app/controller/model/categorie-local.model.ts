@@ -3,3 +3,6 @@ export class CategorieLocal {
   public libelle!: string;
   public code!: string;
 }
+
+export class Categorielocale {
+}
