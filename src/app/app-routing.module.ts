@@ -8,8 +8,8 @@ import {ServiceComponent} from "./pages/service/service.component";
 import {TaxeComponent} from "./pages/taxe/taxe.component";
 import {UserComponent} from "./pages/user/user.component";
 import {TeamComponent} from "./pages/team/team.component";
-import {LoginComponent} from "./pages/login/login.component";
 import {PaimentComponent} from "./pages/paiment/paiment.component";
+import {RedevableCreatComponent} from "./pages/redevable/redevable-creat/redevable-creat.component";
 
 export let indexLink='';
 export let taxeLink='taxe';
@@ -23,8 +23,8 @@ const routes: Routes = [
   {path:taxeLink,component:TaxeComponent},
   {path:'user',component:UserComponent},
   {path:'team',component:TeamComponent},
-  {path:'login',component:LoginComponent},
-  {path:'paiment',component:PaimentComponent}
+  {path:'paiment',component:PaimentComponent},
+  {path:'redevable-create',component:RedevableCreatComponent}
 ];
 
 @NgModule({
