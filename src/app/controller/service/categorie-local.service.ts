@@ -7,6 +7,7 @@ import {environment} from "../../environments/environment";
   providedIn: 'root'
 })
 export class CategorieLocalService {
+
  private _categorie={} as CategorieLocal;
  private _categories=[] as Array<CategorieLocal>;
 
