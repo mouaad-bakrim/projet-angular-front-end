@@ -11,14 +11,11 @@ import {FooterComponent} from "./shareage/footer/footer.component";
 import {NavbarComponent} from "./shareage/navbar/navbar.component";
 import { ServiceComponent } from './pages/service/service.component';
 import {TaxeComponent} from "./pages/taxe/taxe.component";
-import { NotificationComponent } from './pages/notification/notification.component';
 import { UserComponent } from './pages/user/user.component';
 import { TeamComponent } from './pages/team/team.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PaimentComponent } from './pages/paiment/paiment.component';
-import { TaxeTrimestrielComponent } from './pages/taxe-trimestriel/taxe-trimestriel.component';
-import { TaxeAnuelleComponent } from './pages/taxe-anuelle/taxe-anuelle.component';
 import { RedevableCreatComponent } from './pages/redevable/redevable-creat/redevable-creat.component';
 import { RedevableListComponent } from './pages/redevable/redevable-list/redevable-list.component';
 import { LocalCreateComponent } from './pages/local/local-create/local-create.component';
@@ -52,14 +49,11 @@ import { NotificationLocalCreateComponent } from './pages/notification-local/not
     ContactComponent,
     ServiceComponent,
     TaxeComponent,
-    NotificationComponent,
     UserComponent,
     TeamComponent,
     LogoutComponent,
     LoginComponent,
     PaimentComponent,
-    TaxeTrimestrielComponent,
-    TaxeAnuelleComponent,
     RedevableCreatComponent,
     RedevableListComponent,
     LocalCreateComponent,

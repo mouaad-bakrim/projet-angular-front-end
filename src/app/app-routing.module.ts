@@ -6,7 +6,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import {ServiceComponent} from "./pages/service/service.component";
 import {TaxeComponent} from "./pages/taxe/taxe.component";
-import {NotificationComponent} from "./pages/notification/notification.component";
 import {UserComponent} from "./pages/user/user.component";
 import {TeamComponent} from "./pages/team/team.component";
 import {LoginComponent} from "./pages/login/login.component";
@@ -22,7 +21,6 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'service',component:ServiceComponent},
   {path:taxeLink,component:TaxeComponent},
-  {path:'notification',component:NotificationComponent},
   {path:'user',component:UserComponent},
   {path:'team',component:TeamComponent},
   {path:'login',component:LoginComponent},
