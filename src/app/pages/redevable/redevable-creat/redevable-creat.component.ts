@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
+import {indexLink} from "../../../app-routing.module";
 
 @Component({
   selector: 'app-redevable-creat',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./redevable-creat.component.css']
 })
 export class RedevableCreatComponent {
+  constructor(private router:Router) {
+  }
+  public save(){
+    this.router.navigate([indexLink],{state:{'exemple':12}})
+  }
+
 
 }

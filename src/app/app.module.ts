@@ -14,7 +14,6 @@ import {TaxeComponent} from "./pages/taxe/taxe.component";
 import { UserComponent } from './pages/user/user.component';
 import { TeamComponent } from './pages/team/team.component';
 import { LogoutComponent } from './pages/logout/logout.component';
-import { LoginComponent } from './pages/login/login.component';
 import { PaimentComponent } from './pages/paiment/paiment.component';
 import { RedevableCreatComponent } from './pages/redevable/redevable-creat/redevable-creat.component';
 import { RedevableListComponent } from './pages/redevable/redevable-list/redevable-list.component';
@@ -52,7 +51,6 @@ import { NotificationLocalCreateComponent } from './pages/notification-local/not
     UserComponent,
     TeamComponent,
     LogoutComponent,
-    LoginComponent,
     PaimentComponent,
     RedevableCreatComponent,
     RedevableListComponent,
