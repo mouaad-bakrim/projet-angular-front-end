@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {TaxeAnuelle} from "../model/taxe-anuelle.model";
 import {HttpClient} from "@angular/common/http";
+import {TauxTaxeTrimestriel} from "../model/taux-taxe-trimestriel.model";
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +12,24 @@ export class TaxeAnuelleService {
   private _taxeAnuelles=[] as Array<TaxeAnuelle>;
 
   constructor(private http: HttpClient) { }
+  public save(): void {
+    this.http.post<TaxeAnuelle>(environment.url+'taxe-anuelle/', this.taxeAnuelle).subscribe(data => {
+      if (data != null) {
+        alert('save success');
+      } else {
+        alert('save error::: ref exist');
+      }
+    });
+  }
+  public findAll(): void {
+    this.http.get<Array<TaxeAnuelle>>(environment.url+'taxe-anuelle/').subscribe(
+      data => {
+        this._taxeAnuelles = data;
+      }, error => {
+        alert('Error');
+      }
+    );
+  }
 
   get taxeAnuelle(): TaxeAnuelle {
     if (this._taxeAnuelle == null) {

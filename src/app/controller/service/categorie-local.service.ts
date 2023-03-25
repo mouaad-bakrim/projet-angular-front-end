@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {CategorieLocal} from "../model/categorie-local.model";
 import {HttpClient} from "@angular/common/http";
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -11,13 +12,22 @@ export class CategorieLocalService {
 
   constructor(private http: HttpClient) { }
   public save(): void {
-    this.http.post<CategorieLocal>('http://localhost:8036/api/v1/categorie/', this.categorie).subscribe(data => {
+    this.http.post<CategorieLocal>(environment.url+'categorie/', this.categorie).subscribe(data => {
       if (data != null) {
         alert('save success');
       } else {
         alert('save error::: ref exist');
       }
     });
+  }
+  public findAll(): void {
+    this.http.get<Array<CategorieLocal>>(environment.url+'categorie/').subscribe(
+      data => {
+        this._categories = data;
+      }, error => {
+        alert('Error');
+      }
+    );
   }
 
   get categorie(): CategorieLocal {
