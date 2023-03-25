@@ -12,7 +12,9 @@ export class RedevableCreatComponent implements OnInit{
   constructor(private _redevabelservice:RedevableService) {
   }
 
+
   ngOnInit(): void {
+
   }
   public save(): void {
     this._redevabelservice.save();

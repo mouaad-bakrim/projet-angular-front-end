@@ -36,6 +36,8 @@ import { QuartierCreateComponent } from './pages/quartier/quartier-create/quarti
 import { NotificationCreateComponent } from './pages/notification/notification-create/notification-create.component';
 import { NotificationListComponent } from './pages/notification/notification-list/notification-list.component';
 import { NotificationLocalCreateComponent } from './pages/notification-local/notification-local-create/notification-local-create.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -76,7 +78,9 @@ import { NotificationLocalCreateComponent } from './pages/notification-local/not
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
